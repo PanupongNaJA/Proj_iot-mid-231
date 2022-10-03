@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head lange="en">
+        <title>Sencer shows</title>
+        <!-- title -->
+    </head>
+    <script>
+        
+        document.addEventListener('DOMContentLoaded',function (){
+            
+            document.querySelector('form').onsubmit = function (){
+                fetch('https://midterm-exam-010723313-2022.herokuapp.com/device?sensor_type=flow-transducer&sensor_id=1')
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                    // const currency = document.querySelector('#currency').value;
+                    var rate = data.name;
+                    //if(rate !== undefined){
+                        document.querySelector('#result').innerHTML = `1 USD is equal to ${rate}.`;
+                    //}
+                    //else{
+                    //    document.querySelector('#result').innerHTML = "Invalid currency.";
+                    //}
+                })
+                .catch(error => {
+                    console.log('Error:', error);
+                });
+
+                return false;
+            }
+        });
+    </script>
+    <body>
+        <form>
+            <h1>Select the Sensor</h1>
+            <input id="currency" placeholder="ID" type="text">
+            <input type = "submit" value="Convert">
+        </form>
+        <div id = "result">
+
+        </div>
+    </body>
+</html>
