@@ -1,43 +1,63 @@
 <!DOCTYPE html>
 <html>
     <head lange="en">
-        <title>Sencer shows</title>
+        <title>Senser shows</title>
         <!-- title -->
     </head>
-    <script>
+    <script src="callcur 2.js">
         
-        document.addEventListener('DOMContentLoaded',function (){
-            
-            document.querySelector('form').onsubmit = function (){
-                fetch('https://midterm-exam-010723313-2022.herokuapp.com/device?sensor_type=flow-transducer&sensor_id=1')
-                .then(response => response.json())
-                .then(data => {
-                    console.log(data);
-                    // const currency = document.querySelector('#currency').value;
-                    var rate = data.name;
-                    //if(rate !== undefined){
-                        document.querySelector('#result').innerHTML = `1 USD is equal to ${rate}.`;
-                    //}
-                    //else{
-                    //    document.querySelector('#result').innerHTML = "Invalid currency.";
-                    //}
-                })
-                .catch(error => {
-                    console.log('Error:', error);
-                });
-
-                return false;
-            }
-        });
     </script>
-    <body>
-        <form>
-            <h1>Select the Sensor</h1>
-            <input id="currency" placeholder="ID" type="text">
-            <input type = "submit" value="Convert">
-        </form>
-        <div id = "result">
 
-        </div>
+    <body>
+        <h1>SEN SOR</h1>
+        <form id="flowtransducer">
+            <h1>flow-transducer</h1>
+            <input id="idflow" placeholder="fid" type="text">
+            <input type = "submit">
+            <div id = "fname"></div>
+            <div id = "ftype"></div>
+            <div id = "funit"></div>
+            <div id = "frange"></div>
+            <div id = "fplant-site"></div>
+            <div id = "fvalue"></div>
+        </form>
+      
+        <form id="leveltransducer">
+            <h1>level-transducer</h1>
+            <input id="idlevel" placeholder="lid" type="text">
+            <input type = "submit">
+            <div id = "lname"></div>
+            <div id = "ltype"></div>
+            <div id = "lunit"></div>
+            <div id = "lrange"></div>
+            <div id = "lplant-site"></div>
+            <div id = "lvalue"></div>
+        </form>
+    
+        <form id="temperaturetransducer">
+            <h1>temperature-transducer</h1>
+            <input id="idtemp" placeholder="tid" type="text">
+            <input type = "submit">
+            <div id = "tname"></div>
+            <div id = "ttype"></div>
+            <div id = "tunit"></div>
+            <div id = "trange"></div>
+            <div id = "tplant-site"></div>
+            <div id = "tvalue"></div>
+        </form>
+
+        <form id="pressuretransducer">
+            <h1>pressure-transducer</h1>
+            <input id="idpress" placeholder="pid" type="text">
+            <input type = "submit">
+            <div id = "pname"></div>
+            <div id = "ptype"></div>
+            <div id = "punit"></div>
+            <div id = "prange"></div>
+            <div id = "pplant-site"></div>
+            <div id = "pvalue"></div>
+        </form>
+        
+    
     </body>
 </html>
