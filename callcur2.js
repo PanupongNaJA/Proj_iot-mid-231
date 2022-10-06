@@ -1,4 +1,16 @@
 
+    function login(){
+        var User = document.querySelector('#User').value;
+        var Pass = document.querySelector('#Pass').value;
+        if (User == "ID" && Pass == "Pass"){
+            location.href='page0.html';
+        }
+        else{
+            alert("Incorrect Password. Try again."); 
+        }
+        return false;
+    }
+
     function postdata(){
         var st_id = document.querySelector('#loginid').value;
         var st_name = document.querySelector('#loginname').value;
@@ -23,6 +35,7 @@
         })
         .then(response => console.log(response))
         .catch(error => console.log(error));
+        alert("Thank you");
         
         return false;
     }
@@ -40,12 +53,12 @@
             var sensor_range = data[id].range;
             var sensor_plantsite = data[id]["plant-site"];
             var sensor_value = data[id].value;
-            document.querySelector('#fname').innerHTML = `Name : ${sensor_name}.`;
-            document.querySelector('#ftype').innerHTML = `Type : ${sensor_type}.`;
-            document.querySelector('#funit').innerHTML = `unit : ${sensor_unit}.`;
-            document.querySelector('#frange').innerHTML = `Range : ${sensor_range}.`;
-            document.querySelector('#fplant-site').innerHTML = `Plant-Site : ${sensor_plantsite}.`;
-            document.querySelector('#fvalue').innerHTML = `Value : ${sensor_value}.`;
+            document.querySelector('#fname').innerHTML = `${sensor_name}.`;
+            document.querySelector('#ftype').innerHTML = `${sensor_type}.`;
+            document.querySelector('#funit').innerHTML = `${sensor_unit}.`;
+            document.querySelector('#frange').innerHTML = `${sensor_range}.`;
+            document.querySelector('#fplant-site').innerHTML = `${sensor_plantsite}.`;
+            document.querySelector('#fvalue').innerHTML = `${sensor_value}.`;
         })  
         .catch(error => {
             console.log('Error:', error);
@@ -67,12 +80,12 @@
             var sensor_range = data[id].range;
             var sensor_plantsite = data[id]["plant-site"];
             var sensor_value = data[id].value;
-            document.querySelector('#lname').innerHTML = `Name : ${sensor_name}.`;
-            document.querySelector('#ltype').innerHTML = `Type : ${sensor_type}.`;
-            document.querySelector('#lunit').innerHTML = `unit : ${sensor_unit}.`;
-            document.querySelector('#lrange').innerHTML = `Range : ${sensor_range}.`;
-            document.querySelector('#lplant-site').innerHTML = `Plant-Site : ${sensor_plantsite}.`;
-            document.querySelector('#lvalue').innerHTML = `Value : ${sensor_value}.`;
+            document.querySelector('#lname').innerHTML = `${sensor_name}.`;
+            document.querySelector('#ltype').innerHTML = `${sensor_type}.`;
+            document.querySelector('#lunit').innerHTML = `${sensor_unit}.`;
+            document.querySelector('#lrange').innerHTML = `${sensor_range}.`;
+            document.querySelector('#lplant-site').innerHTML = `${sensor_plantsite}.`;
+            document.querySelector('#lvalue').innerHTML = `${sensor_value}.`;
         })  
         .catch(error => {
             console.log('Error:', error);
@@ -94,12 +107,12 @@
             var sensor_range = data[id].range;
             var sensor_plantsite = data[id]["plant-site"];
             var sensor_value = data[id].value;
-            document.querySelector('#tname').innerHTML = `Name : ${sensor_name}.`;
-            document.querySelector('#ttype').innerHTML = `Type : ${sensor_type}.`;
-            document.querySelector('#tunit').innerHTML = `unit : ${sensor_unit}.`;
-            document.querySelector('#trange').innerHTML = `Range : ${sensor_range}.`;
-            document.querySelector('#tplant-site').innerHTML = `Plant-Site : ${sensor_plantsite}.`;
-            document.querySelector('#tvalue').innerHTML = `Value : ${sensor_value}.`;
+            document.querySelector('#tname').innerHTML = `${sensor_name}.`;
+            document.querySelector('#ttype').innerHTML = `${sensor_type}.`;
+            document.querySelector('#tunit').innerHTML = `${sensor_unit}.`;
+            document.querySelector('#trange').innerHTML = `${sensor_range}.`;
+            document.querySelector('#tplant-site').innerHTML = `${sensor_plantsite}.`;
+            document.querySelector('#tvalue').innerHTML = `${sensor_value}.`;
         })  
         .catch(error => {
             console.log('Error:', error);
@@ -121,12 +134,12 @@
             var sensor_range = data[id].range;
             var sensor_plantsite = data[id]["plant-site"];
             var sensor_value = data[id].value;
-            document.querySelector('#pname').innerHTML = `Name : ${sensor_name}.`;
-            document.querySelector('#ptype').innerHTML = `Type : ${sensor_type}.`;
-            document.querySelector('#punit').innerHTML = `unit : ${sensor_unit}.`;
-            document.querySelector('#prange').innerHTML = `Range : ${sensor_range}.`;
-            document.querySelector('#pplant-site').innerHTML = `Plant-Site : ${sensor_plantsite}.`;
-            document.querySelector('#pvalue').innerHTML = `Value : ${sensor_value}.`;
+            document.querySelector('#pname').innerHTML = `${sensor_name}.`;
+            document.querySelector('#ptype').innerHTML = `${sensor_type}.`;
+            document.querySelector('#punit').innerHTML = `${sensor_unit}.`;
+            document.querySelector('#prange').innerHTML = `${sensor_range}.`;
+            document.querySelector('#pplant-site').innerHTML = `${sensor_plantsite}.`;
+            document.querySelector('#pvalue').innerHTML = `${sensor_value}.`;
         })  
         .catch(error => {
             console.log('Error:', error);
@@ -134,6 +147,8 @@
 
         return false;
     }
+
+    
 
     document.addEventListener('DOMContentLoaded', function (){
         document.querySelector('#flowtransducer').onsubmit = flowtransducer;
@@ -148,7 +163,10 @@
         document.querySelector('#pressuretransducer').onsubmit = pressuretransducer;
     });
     document.addEventListener('DOMContentLoaded', function (){
-        document.querySelector('#login').onsubmit = postdata;
+        document.querySelector('#regis').onsubmit = postdata;
+    });
+    document.addEventListener('DOMContentLoaded', function (){
+        document.querySelector('#login').onsubmit = login;
     });
    
 

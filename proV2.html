@@ -1,32 +1,88 @@
 <!DOCTYPE html>
 <html>
     <head lange="en">
-        <title>Senser shows</title>
+        <title>Login_Panupong</title>
         <!-- title -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     </head>
-    <script src="callcur2.js">
+    <script src="callcur2.js" src="js/bootstrap.min.js">
         
     </script>
+    <body style = "background-image: url('https://img.wallpapersafari.com/desktop/1920/1080/56/62/X0eDO2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    backdrop-filter: blur(2px);  
+    -webkit-backdrop-filter:blur(2px);
+    background-size: cover">
+    <!-- <body style = "background-color : #263859"> -->
+    <!-- head -->
+        <header class="p-3 text-bg-dark">
+            <div class="container">
+              <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="proV3.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                  <i class="bi bi-gift" width="40" height="32" role="img"></i>
+                </a>
+        
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                  <li><a href="proV3.html" class="nav-link px-2 text-secondary">Home</a></li>
+                  <li><a href="https://www.instagram.com/tz_uu/" class="nav-link px-2 text-light">About Us</a></li>
+                  
+                </ul>
+        
+                <!-- <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                  <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+                </form> -->
+        
+                <div class="text-end">
+                  <button type="button" class="btn btn-outline-light me-2">Login</button>
+                  <button type="button" class="btn btn-warning" onclick="location.href='page5.html'">Let us know who?</button>
+                </div>
+              </div>
+            </div>
+          </header>
+    <!-- head -->
+          
 
-    <body>
-        <h1>SEN SOR</h1>
-        <form id="login">
-            <h1>Student ID : 
-            <input id="loginid" placeholder="st_id" type="text"><br />
-            <h1>Student Name : 
-            <input id="loginname" placeholder="st_name" type="text"><br />
-            <h1>Sensor Name : 
-            <input id="loginsname" placeholder="sensor_name" type="text"><br />
-            <h1>Sensor Type : 
-            <input id="loginstype" placeholder="sensor_type" type="text"><br />
-            <h1>Sensor Unit : 
-            <input id="loginsunit" placeholder="sensor_unit" type="text"><br />
-            <h1>Sensor_Value : 
-            <input id="loginsvalue" placeholder="sensor_value" type="text"><br />
-            <input type="submit" value="Register">    
-        </form>
-        <form id="page0">
-            <button onclick="location.href='C:/Users/D O/Desktop/work/IOT/Proj_iot-mid-231/page0.html'" type="button">click</button>
-        </form> 
+    <!-- Form -->
+        <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+            <div class="row align-items-center g-lg-5 py-5">
+              <div class="text-white col-lg-7 text-center text-lg-start">
+                <h1 class="display-4 fw-bold lh-1 mb-3">LOOKKUI Company</h1>
+                <p class="col-lg-10 fs-4">Live Sensor and transducer responding for education. The knowlage can't waiting for you LOGIN NOW!. </p>
+              </div>
+              <div class="col-md-10 mx-auto col-lg-5">
+                <form class="p-4 p-md-5 border rounded-3" style="background-color: #17223B" id="login">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="User" placeholder="ID">
+                    <label for="floatingInput">User Name</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="Pass" placeholder="Pass">
+                    <label for="floatingPassword">Password</label>
+                  </div>
+                  <div class="checkbox mb-3">
+                    <label style="color: #ffffff">
+                      <input type="checkbox" value="remember-me"> Remember me
+                    </label>
+                  </div>
+                  <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+                  <hr class="my-4">
+                  <small class="text-muted">By clicking Sign in, you agree to the terms of use.</small>
+                </form>
+              </div>
+            </div>
+          </div>
+        <!-- Form -->
+        
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+              <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+              </a>
+              <span class="mb-3 mb-md-0 text-muted">© 2022 LOOKKUI Company, Inc & Mr.Panupong Muangmoon</span>
+            </div>
+          </footer>
+
     </body>
 </html>

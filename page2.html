@@ -2,14 +2,145 @@
 <html>
 
     <head lange="en">
-        <title>level-transducer</title>
+        <title>Level-Transducer</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     </head>
-    <script src="callcur2.js">
+    <script src="callcur2.js" src="js/bootstrap.min.js">
         
     </script>
 
-    <body style = "background-color : lightskyblue">
-        <h1>Pagetwo</h1>
+    <body style = "background-color : #937DC2">
+         <!-- head -->
+         <header class="p-3 text-bg-dark">
+            <div class="container">
+              <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="page0.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                  <i class="bi bi-gift" width="40" height="32" role="img"></i>
+                </a>
+        
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                  <li><a href="page0.html" class="nav-link px-2 text-secondary">Home</a></li>
+                  <li><a href="https://www.instagram.com/tz_uu/" class="nav-link px-2 text-light">About Us</a></li>
+                  
+                </ul>
+        
+                <!-- <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                  <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+                </form> -->
+        
+                <div class="text-end">
+                  <button type="button" class="btn btn-outline-light me-2" onclick="location.href='proV2.html'">Logout</button>
+                  <button type="button" class="btn btn-warning" onclick="location.href='page5.html'">Let us know. who?</button>
+                </div>
+              </div>
+            </div>
+        </header>
+        <!-- head -->
+    
+            <!-- titlehead -->
+            <main class="container">
+                <div class="p-4 p-md-5 mb-4 rounded text-bg-dark">
+                    <div class="col-md-6 px-0">
+                      <h1 class="display-4 fst-italic">Level Transducer</h1>
+                      
+                    </div>
+                    <p class="lead my-3">Level transmitters provide continuous level measurement over the range of the system rather than at a single point and produce an output signal that directly correlates to the level within a vessel. From depth and pressure, to float, radar, ultrasonic, and capacitive, these transmitters employ different technologies designed individually for specific level applications. </p>
+                    <!-- <p class="lead mb-0"><a href="https://www.variohm.com/news-media/technical-blog-archive/difference-between-a-sensor-and-a-transducer" class="text-white fw-bold">Continue reading...</a></p> -->
+                </div>
+                </main>
+            <!-- titlehead -->
+    
+            <!-- select id -->
+            <div class="container col-md-3 p-3">
+            <form id="leveltransducer"> 
+                <select name="se1" class="form-select" id="idlevel">
+                    <option>Select ID of Flow-Transducer</option>
+                    <option value="0">ID : 0</option>
+                    <option value="1">ID : 1</option>
+                    <option value="2">ID : 2</option>
+                </select>
+                <input type = "submit">
+            </form>
+            </div>
+            <!-- select id -->
+    
+            <!-- body  -->
+            <div class="container">
+              <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                <div class="col">
+                  <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                      <h4 class="my-0 fw-normal">Name</h4>
+                    </div>
+                    <div class="card-body">
+                      <h3 class="card-title pricing-card-title" id="lname">wait a minute..</h3>
+                    </div>
+                  </div>
+                </div>
+                <!-- \\\\\\\\\\\\\\\\\\\ -->
+                <div class="col">
+                  <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                      <h4 class="my-0 fw-normal">Type</h4>
+                    </div>
+                    <div class="card-body">
+                      <h3 class="card-title pricing-card-title" id="ltype">wait a minute..</h3>
+                    </div>
+                  </div>
+                </div>
+                <!-- \\\\\\\\\\\\\\\\\\\ -->
+                <div class="col">
+                  <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                      <h4 class="my-0 fw-normal">Unit</h4>
+                    </div>
+                    <div class="card-body">
+                      <h3 class="card-title pricing-card-title" id="lunit">wait a minute..</h3>
+                    </div>
+                  </div>
+                </div>
+                <!-- \\\\\\\\\\\\\\\\\\\ -->
+                <div class="col">
+                  <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                      <h4 class="my-0 fw-normal">Range</h4>
+                    </div>
+                    <div class="card-body">
+                      <h3 class="card-title pricing-card-title" id="lrange">wait a minute..</h3>
+                    </div>
+                  </div>
+                </div>
+                <!-- \\\\\\\\\\\\\\\\\\\ -->
+                <div class="col">
+                  <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                      <h4 class="my-0 fw-normal">Plant-Site</h4>
+                    </div>
+                    <div class="card-body">
+                      <h3 class="card-title pricing-card-title" id="lplant-site">wait a minute..</h3>
+                    </div>
+                  </div>
+                </div>
+                <!-- \\\\\\\\\\\\\\\\\\\ -->
+                <div class="col">
+                  <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                      <h4 class="my-0 fw-normal">Value</h4>
+                    </div>
+                    <div class="card-body">
+                      <h3 class="card-title pricing-card-title" id="lvalue">wait a minute..</h3>
+                    </div>
+                  </div>
+                </div>
+                <!-- \\\\\\\\\\\\\\\\\\\ -->
+                <!-- \\\\\\\\\\\\\\\\\\\\\\\ -->
+            </div>
+            <!-- body  -->
+
+
+
+        <!-- <h1>Pagetwo</h1>
         <form id="leveltransducer">
             <h1>level-transducer</h1>
             <input id="idlevel" placeholder="lid" type="text">
@@ -20,6 +151,6 @@
             <div id = "lrange"></div>
             <div id = "lplant-site"></div>
             <div id = "lvalue"></div>
-        </form>
+        </form> -->
     </body>
 </html>
